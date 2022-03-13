@@ -1,0 +1,259 @@
+
+./out/rtos.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+40000000 l    d  .text	00000000 .text
+40004fec l    d  .data	00000000 .data
+40005054 l    d  .bss	00000000 .bss
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 entry.os
+40000020 l       .text	00000000 reset_handler_addr
+40000024 l       .text	00000000 undef_handler_addr
+40000028 l       .text	00000000 svc_handler_addr
+4000002c l       .text	00000000 pftch_abt_handler_addr
+40000030 l       .text	00000000 data_abt_handler_addr
+40000034 l       .text	00000000 irq_handler_addr
+40000038 l       .text	00000000 fiq_handler_addr
+4000003c l       .text	00000000 reset_handler
+400000cc l       .text	00000000 dummy_handler
+00000000 l    df *ABS*	00000000 main.c
+40005054 l       .bss	00000004 test_shared_value
+400003fc l     F .text	00000054 hw_init
+40000588 l     F .text	000000e0 test_i2c_master_write
+40000668 l     F .text	00000158 test_i2c_master_read
+40000128 l     F .text	00000190 test_user_task0
+40000510 l     F .text	00000078 test_critical_section
+400002b8 l     F .text	00000108 test_user_task1
+400003c0 l     F .text	0000003c test_user_task2
+40000450 l     F .text	000000c0 kernel_init
+400007c0 l     F .text	00000018 test_i2c_slave_write
+400007d8 l     F .text	00000018 test_i2c_slave_read
+00000000 l    df *ABS*	00000000 handler.c
+00000000 l    df *ABS*	00000000 uart.c
+40005058 l       .bss	0000003c s_uart_mng
+40000a2c l     F .text	000000ac interrupt_handler
+00000000 l    df *ABS*	00000000 regs.c
+00000000 l    df *ABS*	00000000 spi.c
+00000000 l    df *ABS*	00000000 interrupt.c
+400050b8 l       .bss	000003fc s_handlers
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 timer.c
+400054b4 l       .bss	00000004 internal_1ms_counter
+40002064 l     F .text	00000054 interrupt_handler
+00000000 l    df *ABS*	00000000 i2c.c
+400054b8 l       .bss	000003f0 s_i2c_mng
+40002518 l     F .text	000001f4 i2c_intr_handler
+00000000 l    df *ABS*	00000000 wdt.c
+400034ac l     F .text	00000034 wdt_intr_handler
+00000000 l    df *ABS*	00000000 stdlib.c
+00000000 l    df *ABS*	00000000 stdio.c
+400058a8 l       .bss	00000400 s_printf_buf
+00000000 l    df *ABS*	00000000 armcpu.c
+00000000 l    df *ABS*	00000000 switch.c
+00000000 l    df *ABS*	00000000 task.c
+40005ca8 l       .bss	00000200 s_task_list
+40005ea8 l       .bss	00000004 s_allocated_tcb_idx
+40005eac l       .bss	00000004 s_cur_tcb_idx
+40005eb0 l       .bss	00000004 s_cur_tcb
+40005eb4 l       .bss	00000004 s_next_tcb
+4000401c l     F .text	00000080 s_scheduler_round_robin_algo
+4000409c l     F .text	0000000c s_kernel_task_context_switching
+400040a8 l     F .text	00000020 s_save_context
+400040c8 l     F .text	00000020 s_restore_context
+00000000 l    df *ABS*	00000000 msg.c
+00000000 l    df *ABS*	00000000 event.c
+400064d0 l       .bss	00000004 s_event_flag
+00000000 l    df *ABS*	00000000 synch.c
+400064d4 l       .bss	00000004 s_sem_max
+400064d8 l       .bss	00000004 s_sem
+400064dc l       .bss	00000008 s_mutex
+00000000 l    df *ABS*	00000000 kernel.c
+00000000 l    df *ABS*	00000000 _udivsi3.o
+40004d70 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l       *ABS*	00000000 shift
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+40001fd4 g     F .text	00000018 HAL_gpio_intr_type_get
+40004ffc g     O .data	00000004 dist_secur_stat
+40000eb4 g     F .text	00000018 uart_configure
+4000204c g     F .text	00000018 HAL_gpio_pwr_down_mode_pud
+40004650 g     F .text	00000040 kernel_event_flag_set
+40001110 g     F .text	00000018 spi_intr_disable
+4000129c g     F .text	0000009c HAL_interrupt_deinit
+400010b0 g     F .text	00000018 spi_busy
+400036b4 g     F .text	00000030 HAL_wdt_enable
+40003990 g     F .text	000002b8 vsprintf
+40000f50 g     F .text	00000020 uart_interrupt_disable
+40002fa8 g     F .text	00000088 i2c_interrupt_register
+40000ba0 g     F .text	0000008c HAL_uart_deinit
+40001188 g     F .text	00000018 spi_intr_handler
+40002b20 g     F .text	00000088 i2c_disable
+40001e9c g     F .text	00000018 HAL_gpio_pin_type_input
+40001ecc g     F .text	00000018 HAL_gpio_pin_type_output_pud
+40004858 g     F .text	0000006c kernel_sem_unlock
+400038e0 g     F .text	00000060 putstr
+40001170 g     F .text	00000018 spi_intr_unregister
+40004628 g     F .text	00000028 kernel_event_flag_init
+40000ad8 g     F .text	000000c8 HAL_uart_init
+40003128 g     F .text	00000084 i2c_interrupt_disable
+40004c04 g     F .text	00000094 kernel_recv_msg
+4000501c g     O .data	00000004 dist_icdicfr
+40004124 g     F .text	00000024 Kernel_task_get_current_task_id
+4000233c g     F .text	000000e8 HAL_timer_configure
+400011a0 g     F .text	00000018 spi_clk_src_get
+40005024 g     O .data	00000004 dist_icdsgir
+40004a68 g     F .text	000000c4 kernel_wait_events
+40001f44 g     F .text	00000018 HAL_gpio_intr_enable
+40001e84 g     F .text	00000018 HAL_gpio_pin_read
+40003030 g     F .text	00000074 i2c_interrupt_unregister
+40000cb4 g     F .text	0000004c HAL_uart_put_string
+40002208 g     F .text	00000048 HAL_timer_deinit
+4000003c g       .text	00000000 vector_end
+400035cc g     F .text	000000e8 HAL_wdt_configure
+40005008 g     O .data	00000004 dist_icdispr
+40003d64 g     F .text	0000002c enable_irq
+400010e0 g     F .text	00000018 spi_dma_disable
+40001fec g     F .text	00000018 HAL_gpio_intr_type_set
+40001080 g     F .text	00000018 spi_data_get
+4000270c g     F .text	00000024 HAL_i2c_dev_open
+40005028 g     O .data	00000004 g_uart
+40000c2c g     F .text	00000088 HAL_uart_put_char
+40005034 g     O .data	00000004 g_wdt
+40003d90 g     F .text	0000002c enable_fiq
+40004d70 g     F .text	0000025c .hidden __udivsi3
+400010f8 g     F .text	00000018 spi_intr_enable
+40001050 g     F .text	00000018 spi_init
+40003244 g     F .text	00000044 i2c_clock_source_get
+40004ff0 g     O .data	00000004 gic_cpu
+40000000 g       .text	00000000 vector_start
+40002a20 g     F .text	00000078 i2c_mode_selection
+40002004 g     F .text	00000018 HAL_gpio_drv_strength_ctrl
+400030a4 g     F .text	00000084 i2c_interrupt_enable
+40004360 g     F .text	00000170 kernel_msgq_enqueue
+40001068 g     F .text	00000018 spi_deinit
+40005094 g     O .bss	00000024 g_i2c
+40005050 g     O .data	00000004 g_spi2
+40005048 g     O .data	00000004 g_spi0
+4000500c g     O .data	00000004 dist_icdicpr
+40000f90 g     F .text	00000024 uart_interrupt_number_get
+40005000 g     O .data	00000004 dist_set_en
+400044d0 g     F .text	00000158 kernel_msgq_dequeue
+4000478c g     F .text	00000078 kernel_sem_init
+40004b2c g     F .text	000000d8 kernel_send_msg
+40002e24 g     F .text	00000184 i2c_receive
+40001ab8 g     F .text	00000038 HAL_interrupt_register_handler
+40005030 g     O .data	00000004 g_timer_isp
+40001f5c g     F .text	00000018 HAL_gpio_intr_disable
+40002730 g     F .text	00000024 HAL_i2c_dev_close
+40000f30 g     F .text	00000020 uart_interrupt_enable
+400049c4 g     F .text	00000014 kernel_yield
+40003580 g     F .text	0000004c HAL_wdt_deinit
+40005040 g     O .data	00000004 g_gpioz2z
+40002ba8 g     F .text	00000060 i2c_start
+40001f8c g     F .text	00000018 HAL_gpio_intr_status
+40001338 g     F .text	000004f0 HAL_interrupt_enable
+40003c48 g     F .text	00000114 utoa
+40002c68 g     F .text	00000050 i2c_busy
+40005044 g     O .data	00000004 g_gpiov2v
+40003288 g     F .text	00000124 i2c_base_address_get
+40001128 g     F .text	00000018 spi_intr_clear
+40001af0 g     F .text	00000034 HAL_interrupt_unregister_handler
+40005020 g     O .data	00000004 dist_intr_stat
+40005010 g     O .data	00000004 dist_icdabr
+40000ecc g     F .text	00000024 uart_base_address_get
+40000e84 g     F .text	00000018 uart_init
+400049d8 g     F .text	00000090 kernel_send_events
+40000ef0 g     F .text	00000020 uart_interrupt_register
+40001eb4 g     F .text	00000018 HAL_gpio_pin_type_output
+40000d00 g     F .text	0000004c HAL_uart_debug_printf
+40004c98 g     F .text	00000034 kernel_lock_sem
+40004ff4 g     O .data	00000004 gic_dist
+4000298c g     F .text	00000094 i2c_configure
+40000d4c g     F .text	00000044 HAL_uart_get_char
+40004fec g     O .data	00000004 TEST_I2C_ID
+4000293c g     F .text	00000050 i2c_deinit
+40005014 g     O .data	00000004 dist_icdipr
+40001efc g     F .text	00000018 HAL_gpio_pad_cfg_set
+40000dd8 g     F .text	000000ac HAL_uart_get_string
+40002cb8 g     F .text	0000016c i2c_transmit
+40000928 g     F .text	000000fc irq_Handler
+4000201c g     F .text	00000018 HAL_gpio_sleep_mode_ctrl
+40002034 g     F .text	00000018 HAL_gpio_pwr_down_mode_cfg
+40002754 g     F .text	0000002c HAL_i2c_data_transmit
+40001828 g     F .text	00000290 HAL_interrupt_disable
+40002780 g     F .text	0000002c HAL_i2c_data_receive
+40004fe8  w    F .text	00000002 .hidden __aeabi_ldiv0
+40002304 g     F .text	00000038 HAL_timer_disable
+40004150 g     F .text	000000d8 kernel_msgq_init
+40002c08 g     F .text	00000060 i2c_stop
+40001098 g     F .text	00000018 spi_data_put
+400011b8 g     F .text	00000018 spi_clk_src_set
+40003820 g     F .text	00000064 memset
+400000ec g     F .text	0000003c main
+40005004 g     O .data	00000004 dist_clr_en
+4000504c g     O .data	00000004 g_spi1
+40001ee4 g     F .text	00000018 HAL_gpio_pad_cfg_get
+40004d70 g     F .text	00000000 .hidden __aeabi_uidiv
+40001f2c g     F .text	00000018 HAL_gpio_dir_mode_set
+4000502c g     O .data	00000004 g_timer
+400031ac g     F .text	00000098 i2c_clock_source_set
+40000a24 g     F .text	00000008 fiq_Handler
+40001f14 g     F .text	00000018 HAL_gpio_dir_mode_get
+40002250 g     F .text	000000b4 HAL_timer_enable
+40001158 g     F .text	00000018 spi_intr_register
+40003e14 g     F .text	00000124 kernel_task_init
+400036e4 g     F .text	00000030 HAL_wdt_disable
+40000f10 g     F .text	00000020 uart_interrupt_unregister
+400037d4 g     F .text	0000004c delay
+400010c8 g     F .text	00000018 spi_dma_enable
+400042c0 g     F .text	000000a0 kernel_msgq_is_full
+40004ce0 g     F .text	00000048 kernel_lock_mutex
+40003fcc g     F .text	00000050 kernel_task_scheduler
+40005018 g     O .data	00000004 dist_icdiptr
+40001e6c g     F .text	00000018 HAL_gpio_pin_cfg
+40004d28 g     F .text	00000048 kernel_unlock_mutex
+400027ac g     F .text	00000190 i2c_init
+40004ccc g     F .text	00000014 kernel_unlock_sem
+400020b8 g     F .text	00000150 HAL_timer_init
+40004228 g     F .text	00000098 kernel_msgq_is_empty
+4000495c g     F .text	00000054 kernel_mutex_unlock
+40001f74 g     F .text	00000018 HAL_gpio_intr_clear
+40004fcc g     F .text	0000001a .hidden __aeabi_uidivmod
+40005038 g     O .data	00000004 g_gpioa2j
+40001fa4 g     F .text	00000018 HAL_gpio_intr_hdl_register
+40003f38 g     F .text	00000094 kernel_task_create
+40004804 g     F .text	00000054 kernel_sem_lock
+400048fc g     F .text	00000060 kernel_mutex_lock
+400034e0 g     F .text	000000a0 HAL_wdt_init
+40000e9c g     F .text	00000018 uart_deinit
+40003de8 g     F .text	0000002c disable_fiq
+40001fbc g     F .text	00000018 HAL_gpio_intr_hdl_unregister
+40001b24 g     F .text	000000dc HAL_interrupt_run_handler
+40002424 g     F .text	00000024 HAL_timer_get_1ms_counter
+400033ac g     F .text	00000100 i2c_interrupt_number_get
+40004fe8  w    F .text	00000002 .hidden __aeabi_idiv0
+40003884 g     F .text	0000005c memclr
+40002a98 g     F .text	00000088 i2c_enable
+40000f70 g     F .text	00000020 uart_interrupt_clear
+4000503c g     O .data	00000004 g_gpiok2x
+40003940 g     F .text	00000050 debug_printf
+400040e8 g     F .text	0000003c kernel_task_start
+400048c4 g     F .text	00000038 kernel_mutex_init
+40004ff8 g     O .data	00000004 icciidr
+40001140 g     F .text	00000018 spi_intr_status
+400049b0 g     F .text	00000014 kernel_start
+40004690 g     F .text	00000044 kernel_event_flag_clear
+40005eb8 g     O .bss	00000618 s_msgq
+400046d4 g     F .text	00000088 kernel_event_flag_check
+40000d90 g     F .text	00000048 HAL_uart_get_key
+400011d0 g     F .text	000000cc HAL_interrupt_init
+40003dbc g     F .text	0000002c disable_irq
+
+
